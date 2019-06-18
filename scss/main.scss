@@ -1,0 +1,19 @@
+@import "core/variables";
+@import "./components/typography";
+@import "./layout/footer";
+@import "./layout/cardPage";
+@import "./layout/form";
+@import "./layout/card";
+@import "layout/start_page";
+
+body{
+    margin:0;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: $color01;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

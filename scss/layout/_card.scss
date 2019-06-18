@@ -1,0 +1,16 @@
+.part_of_card{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 40vw;
+    min-height: 40vh;
+    border: 1px solid green;
+}
+.card{
+    width: 40vw;
+    height: 20vh;
+    border: 1px solid gray;
+    @media (min-width:1200px) {
+      height: 25vh;
+    }
+}

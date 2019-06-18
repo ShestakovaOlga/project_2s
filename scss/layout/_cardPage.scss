@@ -1,0 +1,30 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-grow:1;
+}
+
+.work_space{
+    display:flex;
+}
+.part_of_form{
+    width: 40vw;
+    min-height: 40vh;
+    border: 1px solid red;
+}
+
+.card_button{
+    width: 110px;
+    margin-top:3vw;
+    margin-left:50vw;
+    padding: 5px 10px;
+    background-color: $color02;
+    border-radius: 9px;
+    font-size:0.9rem;
+    outline: none;
+    @media (min-width:768px) {
+        width: 130px;
+        margin-left:55vw;
+        font-size:1.1rem;
+    }
+}
