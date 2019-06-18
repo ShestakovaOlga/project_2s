@@ -1,16 +1,47 @@
 .part_of_card{
     display: flex;
-   justify-content: center;
+    justify-content: center;
    align-items: center;
    width: 40vw;
     min-height: 40vh;
     border: 1px solid green;
+    border-radius:5px;
 }
 .card{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
     width: 40vw;
     height: 20vh;
     border: 1px solid gray;
+   
     @media (min-width:1200px) {
       height: 25vh;
     }
+}
+
+.img_card{
+  grid-row: span 3;
+  border:1px solid salmon;
+  width: 12vw;
+  height: 20vh;
+  @media (min-width:1200px) {
+    height: 25vh;
+  }
+}
+
+.name_card{
+  border: 1px solid blue;
+  grid-column-start:2;
+  grid-column-end: 5;
+  text-align: center;
+  padding: 15px;
+}
+.profes_card{
+  border: 1px solid blue;
+  grid-column-start:2;
+  grid-column-end: 4;
+}
+.telefono_card{
+  border: 1px solid blue;
 }
