@@ -1,0 +1,14 @@
+.diseño{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2vw;
+    overflow: hidden;
+    transition: all 3s;
+        & img{
+        width: 5vw;
+    }
+}
+.line{
+    border-bottom:1px solid #b0b4b6;
+    margin-bottom: 5px;
+}

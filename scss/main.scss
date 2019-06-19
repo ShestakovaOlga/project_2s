@@ -4,6 +4,7 @@
 @import "./layout/cardPage";
 @import "./layout/form";
 @import "./layout/card";
+@import "./layout/diseña";
 @import "layout/start_page";
 
 body{
@@ -15,5 +16,11 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
+.collapse {
+    //animation: collapse 1s linear forwards;
+    height: 0;
+    transition: all 1s;
+}

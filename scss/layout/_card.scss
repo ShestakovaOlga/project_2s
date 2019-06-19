@@ -4,44 +4,77 @@
    align-items: center;
    width: 40vw;
     min-height: 40vh;
-    border: 1px solid green;
-    border-radius:5px;
+    background-color:$color02trans ;
+    margin-left: 15px;
 }
 .card{
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-    width: 40vw;
-    height: 20vh;
-    border: 1px solid gray;
-   
-    @media (min-width:1200px) {
-      height: 25vh;
-    }
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+  width: 400px;
+  height: 150px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-image: url(../fondo1.jpg);
+  overflow: hidden;
 }
 
 .img_card{
-  grid-row: span 3;
-  border:1px solid salmon;
-  width: 12vw;
-  height: 20vh;
-  @media (min-width:1200px) {
-    height: 25vh;
-  }
+  grid-row: span 5;
+  height: 100%;
 }
 
 .name_card{
-  border: 1px solid blue;
-  grid-column-start:2;
-  grid-column-end: 5;
-  text-align: center;
-  padding: 15px;
-}
-.profes_card{
-  border: 1px solid blue;
+ 
   grid-column-start:2;
   grid-column-end: 4;
+  padding: 1px;
+  font-size: 0.8rem;
+  @media (min-width:1200px) {
+    font-size: 1.1rem;
+  }
+}
+.profes_card{
+
+  grid-column-start:2;
+  grid-column-end: 4;
+  font-size: 0.8rem;
+  padding: 1px;
+  @media (min-width:1200px) {
+    font-size: 1rem;
+  }
 }
 .telefono_card{
-  border: 1px solid blue;
+  grid-column-start:2;
+  grid-column-end: 3;
+  padding: 2px;
+  font-size: 0.6rem;
+  @media (min-width:1200px) {
+    font-size: 1rem;
+  }
+}
+.email_card1{
+  grid-column-start:2;
+  grid-column-end:4;
+  font-size: 0.4rem;
+  @media (min-width:1200px) {
+    font-size: 0.9rem;
+  }
+}
+.linkedin_card1{
+  grid-column-start:2;
+  grid-column-end:5;
+  font-size: 0.5rem;
+  margin-left: 1px;
+  @media (min-width:1200px) {
+    font-size: 1rem;
+  }
+}
+.github_card1{
+  grid-column-start:2;
+  grid-column-end:4;
+  font-size: 0.5rem;
+  @media (min-width:1200px) {
+    font-size: 1rem;
+  }
 }

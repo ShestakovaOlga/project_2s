@@ -16,11 +16,37 @@
         <img src="./1.svg" alt="img"></div>
     <div class="main">
         <div class="work_space">
-
-
             <div class="part_of_form">
-                <div><span>Diseña</span></div>
-                <div><span>Rellena</span></div>
+                <div>
+                    <i class="far fa-clone"></i>
+                    <span class="span_dis">Diseña</span>
+                    <i class="fas fa-angle-down arrow_anim1"></i>
+                    <div class="line"></div>
+
+                    <div class="diseño">
+                        <span> Colores</span>
+                        <div>
+                            <label for="colorpalete1">
+                                <input id="colorpalete1" type="radio" value="color1" name="colorpalete1">
+                                <img src="./fondo1.jpg" alt="img" class="fondo1_1">
+                            </label>
+                            <label for="colorpalete2">
+                                <input id="colorpalete2" type="radio" value="color2" name="colorpalete2">
+                                <img src="./fondo2.jpg" alt="img" class="fondo2_1">
+                            </label>
+                            <label for="colorpalete3">
+                                <input id="colorpalete3" type="radio" value="color3" name="colorpalete3">
+                                <img src="./Fondo3.jpg" alt="img" class="fondo3_1">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <i class="fas fa-keyboard"></i>
+                    <span>Rellena</span>
+                    <i class="fas fa-angle-down arrow_anim2"></i>
+                </div>
+                <div class="line"></div>
                 <form action="" method="post" class="form">
                     <div class='row-form'>
                         <label for="name">Nombre completo: </label>
@@ -44,25 +70,38 @@
                         <input type="file" name="photo" id="img-selector">
                         <input type="hidden" name="palette" value="1">
                         <input type="hidden" name="typography" value="1"></div>
-
-                    <button type="button" id="submit">Enviar</button>
                 </form>
 
                 <p class="response"></p>
-                <div><span>Comparte</span></div>
+                <div><i class="fas fa-share-alt-square"></i>
+                    <span>Comparte</span>
+                    <i class="fas fa-angle-down arrow_anim3"></i></div>
+                <div class="line"></div>
+                <i link="https://www.linkedin.com/in/olga-shestakova-61412b165/" class="fab fa-linkedin-in"></i>
+                <i link="https://github.com/ShestakovaOlga" class="fab fa-github"></i>
             </div>
 
             <div class="part_of_card">
                 <div class="card">
-                    <div class="img_card "><img class="img_card " src="" alt="">Imagen</div>
+                    <img class="img_card " src="" alt="">
+
                     <span class="name_card">Nombre</span>
-                    <div class="profes_card"><img src="" alt=""> <span class="profes_card1">Profesión</span></div>
+
+                    <div class="profes_card">
+                        <span class="profes_card1">Profesión</span></div>
+
                     <div class="telefono_card"><i class="fas fa-mobile-alt"></i> <span
                             class="telefono_card1">Teléfono</span>
                     </div>
+
+                    <div class="email_card"><i class="icon fas fa-envelope"></i>
+                        <span class="email_card1">Email</span></div>
+
                     <div class="linkedin_card"><i class="fab fa-linkedin"></i><span
                             class="linkedin_card1">LinkedIn</span></div>
-                    <div class="github_card"><i class="fab fa-github"></i><span class="github_card1">GitHub</span></div>
+
+                    <div class="github_card"><i class="fab fa-github"></i>
+                        <span class="github_card1">GitHub</span></div>
                 </div>
             </div>
         </div>
