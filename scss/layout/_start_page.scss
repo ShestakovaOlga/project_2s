@@ -14,6 +14,12 @@
 
 .start_img{
     margin-top:20px;
+    & img{
+        width: 150px;
+    }
+    @media (min-width:768px) {
+        width: 300px;
+    }
 }
 
 .start_button{

@@ -1,14 +1,32 @@
 .diseño{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     margin-right: 2vw;
     overflow: hidden;
     transition: all 3s;
         & img{
-        width: 5vw;
+            
+        width: 80px;
+
     }
 }
 .line{
     border-bottom:1px solid #b0b4b6;
     margin-bottom: 5px;
 }
+.colores{
+        display: flex;
+        flex-direction: column;
+    }
+
+.font{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.fuentes{
+        display: flex;
+        flex-direction: column;
+        font-size: 0.9rem;
+        overflow: hidden;
+    }

@@ -70,9 +70,11 @@ imghubElement.addEventListener('change', (event) => {
 /*animation of arrow*/
 const arrowElement = document.querySelector('.arrow_anim1');
 const colorElement = document.querySelector('.diseño');
+const fontElement = document.querySelector('.font');
 
 arrowElement.addEventListener('click', () => {
     colorElement.classList.toggle('collapse')
+    fontElement.classList.toggle('collapse')
     console.log(arrowElement);
 })
 
@@ -83,10 +85,11 @@ arrow1Element.addEventListener('click', () => {
     console.log(formElement);
 })
 const arrow2Element = document.querySelector('.arrow_anim3');
-
+const compartirElement = document.querySelector('.compart');
 arrow2Element.addEventListener('click', () => {
-    arrow2Element.classList.toggle('collapse')
+    compartirElement.classList.toggle('collapse')
     console.log(arrow2Element);
 })
+
 
 

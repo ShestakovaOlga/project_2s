@@ -1,12 +1,14 @@
 .form{
     display:flex;
     flex-direction: column;
-    margin: 30px;
-    height: 350px;
     box-sizing: border-box;
     border-radius: 5px;
      overflow: hidden;
      transition: all 1s;
+     @media (min-width:768px) {
+       margin:30px;
+       height: 300px;
+    }
 }
 
 .row-form{
@@ -50,4 +52,11 @@
     margin-left: 1vw;
     margin-right: 3vw;
 }
-
+.compart{
+    overflow: hidden;
+    margin-top:15px;
+  
+   & i{
+    margin-left: 15px;
+    }
+}
