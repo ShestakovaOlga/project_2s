@@ -2,3 +2,16 @@
 $font-size:1.6rem;
 $font-type-button: 'Pacifico', cursive;
 $font-type-text:'Satisfy', cursive;
+$font-type-ubuntu: 'Ubuntu', sans-serif;
+$font-type-montserrat: 'Montserrat', sans-serif;
+$font-type-mali: 'Mali', cursive;
+
+.fontUbuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+.fontMonts {
+    font-family: 'Montserrat', sans-serif;
+}
+.fontMali {
+    font-family:'Mali', cursive;
+}

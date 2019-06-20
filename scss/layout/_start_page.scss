@@ -15,15 +15,18 @@
 .start_img{
     margin-top:20px;
     & img{
+        margin-left:15px;
         width: 150px;
     }
     @media (min-width:768px) {
         width: 300px;
+        margin-left:20px;
     }
 }
 
 .start_button{
-    background-color: $color02;
+    background-color:$color02;
+    color:$color-light;
     padding: 5px 20px;
     border-radius: 9px;
     margin-top:15px;

@@ -1,15 +1,21 @@
 .work_space{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  overflow: hidden;
+  @media (min-width:768px) {
+    display: flex;
+    flex-direction: row;
+    margin-top:30px;
+  }
 }
 .part_of_card{
     display: flex;
     justify-content: center;
-   align-items: center;
-   width: 40vw;
-    min-height: 40vh;
-    background-color:$color02trans ;
-    margin-left: 15px;
+    align-items: center;
+    overflow: hidden;
+    @media (min-width:768px) {
+    margin-right: 40px; 
+  }
 }
 .card{
   display:grid;
@@ -20,9 +26,8 @@
   border-radius: 5px;
   background-image: url(../fondo1.jpg);
   overflow: hidden;
-  @media (min-width:768px) {
-   height: 120px;
-}
+  height: 250px;
+  background-size: cover;
 }
 
 .img_card{
@@ -35,52 +40,36 @@
   grid-column-start:2;
   grid-column-end: 4;
   padding: 1px;
-  font-size: 0.8rem;
-  @media (min-width:1200px) {
     font-size: 1.1rem;
   }
-}
 .profes_card{
 
   grid-column-start:2;
   grid-column-end: 4;
-  font-size: 0.8rem;
   padding: 1px;
-  @media (min-width:1200px) {
-    font-size: 1rem;
-  }
+  font-size: 1rem;
 }
 .telefono_card{
   grid-column-start:2;
   grid-column-end: 3;
   padding: 2px;
-  font-size: 0.6rem;
-  @media (min-width:1200px) {
     font-size: 1rem;
-  }
 }
 .email_card1{
   grid-column-start:2;
   grid-column-end:4;
-  font-size: 0.4rem;
-  @media (min-width:1200px) {
-    font-size: 0.9rem;
-  }
+  font-size: 0.9rem;
 }
 .linkedin_card1{
   grid-column-start:2;
   grid-column-end:5;
   font-size: 0.5rem;
   margin-left: 1px;
-  @media (min-width:1200px) {
     font-size: 1rem;
-  }
+  
 }
 .github_card1{
   grid-column-start:2;
   grid-column-end:4;
-  font-size: 0.5rem;
-  @media (min-width:1200px) {
     font-size: 1rem;
-  }
 }

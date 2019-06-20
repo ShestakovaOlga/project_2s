@@ -91,5 +91,45 @@ arrow2Element.addEventListener('click', () => {
     console.log(arrow2Element);
 })
 
+/*change the background of card*/
+import fondo1 from './fondo1.jpg'
+import fondo2 from './fondo2.jpg'
+import fondo3 from './Fondo3.jpg'
 
+const radio1Element = document.getElementById('colorpalete1');
+const radio2Element = document.getElementById('colorpalete2');
+const radio3Element = document.getElementById('colorpalete3');
+const cardElement = document.querySelector('.card');
+radio1Element.addEventListener('change', () => {
+    console.log(fondo2);
 
+    cardElement.style.backgroundImage = `url(${fondo1})`
+})
+
+radio2Element.addEventListener('change', () => {
+    cardElement.style.backgroundImage = `url(${fondo2})`
+})
+
+radio3Element.addEventListener('change', () => {
+    cardElement.style.backgroundImage = `url(${fondo3})`
+})
+/*change fonts of card*/
+const font1Element = document.getElementById('fuente1');
+const font2Element = document.getElementById('fuente2');
+const font3Element = document.getElementById('fuente3');
+const cardFontElement = document.querySelector('.card');
+font1Element.addEventListener('change', () => {
+    cardFontElement.classList.add('fontUbuntu');
+    cardFontElement.classList.remove('fontMonts');
+    cardFontElement.classList.remove('fontMali');
+})
+font2Element.addEventListener('change', () => {
+    cardFontElement.classList.add('fontMonts');
+    cardFontElement.classList.remove('fontUbuntu');
+    cardFontElement.classList.remove('fontMali');
+})
+font3Element.addEventListener('change', () => {
+    cardFontElement.classList.add('fontMali');
+    cardFontElement.classList.remove('fontMonts');
+    cardFontElement.classList.remove('fontUbuntu');
+})

@@ -5,9 +5,7 @@
     overflow: hidden;
     transition: all 3s;
         & img{
-            
-        width: 80px;
-
+            width: 69px;
     }
 }
 .line{
@@ -23,10 +21,21 @@
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    margin-top: 20px;
 }
 .fuentes{
         display: flex;
         flex-direction: column;
         font-size: 0.9rem;
         overflow: hidden;
+        
+        label:nth-child(1){
+            font-family: $font-type-ubuntu;
+        }
+        label:nth-child(2){
+            font-family: $font-type-mali;
+        }
+        label:nth-child(3){
+            font-family:$font-type-montserrat;
+        }
     }
