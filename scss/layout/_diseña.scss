@@ -2,8 +2,9 @@
     display: flex;
     justify-content: space-between;
     margin-right: 2vw;
+    height: 150px;
     overflow: hidden;
-    transition: all 3s;
+    transition: all 1s;
         & img{
             width: 69px;
     }
@@ -22,13 +23,14 @@
     justify-content: space-between;
     overflow: hidden;
     margin-top: 20px;
+     height: 90px;
 }
 .fuentes{
         display: flex;
         flex-direction: column;
         font-size: 0.9rem;
         overflow: hidden;
-        
+       
         label:nth-child(1){
             font-family: $font-type-ubuntu;
         }

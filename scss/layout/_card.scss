@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  @media (min-width:768px) {
+  @media (min-width:1200px) {
     display: flex;
     flex-direction: row;
     margin-top:30px;
@@ -20,8 +20,9 @@
 .card{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
-  width: 400px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  align-items: center;
+  width: 500px;
   border: 1px solid gray;
   border-radius: 5px;
   background-image: url(../fondo1.jpg);
@@ -31,45 +32,59 @@
 }
 
 .img_card{
-  grid-row: span 5;
-  height: 100%;
+  grid-row: 2/7;
+  height: 80%;
+  margin: 10%;
+  width: 80%;
+  border-radius: 5px;
 }
 
 .name_card{
- 
+ grid-row-start: 2;
   grid-column-start:2;
   grid-column-end: 4;
   padding: 1px;
     font-size: 1.1rem;
+    margin-left:2px;
   }
 .profes_card{
-
+  grid-row-start: 3;
   grid-column-start:2;
   grid-column-end: 4;
   padding: 1px;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  margin-left:2px;
 }
 .telefono_card{
+  grid-row-start: 4;
   grid-column-start:2;
-  grid-column-end: 3;
+  grid-column-end: 5;
   padding: 2px;
     font-size: 1rem;
+    margin-left:2px;
 }
-.email_card1{
-  grid-column-start:2;
-  grid-column-end:4;
-  font-size: 0.9rem;
-}
-.linkedin_card1{
+.email_card{
+  grid-row-start: 5;
   grid-column-start:2;
   grid-column-end:5;
-  font-size: 0.5rem;
-  margin-left: 1px;
-    font-size: 1rem;
-  
+  font-size: 1rem;
+  margin-left:2px;
 }
-.github_card1{
+.linkedin_card{
+  grid-row-start: 6;
   grid-column-start:2;
-  grid-column-end:4;
+  grid-column-end:3;
     font-size: 1rem;
+    margin-left:2px; 
+}
+.github_card{
+  grid-row-start: 6;
+  grid-row-end: 7;
+  grid-column-start:3;
+  grid-column-end:5;
+    font-size: 1rem;
+}
+
+.fa-linkedin{
+  margin-right:5px;
 }

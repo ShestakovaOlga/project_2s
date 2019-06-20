@@ -1,4 +1,5 @@
 import './cardPage.html';
+import './card.html';
 
 
 const buttonStart = document.querySelector('.start_button');//start button
@@ -7,6 +8,24 @@ if (buttonStart) {
         window.location.href = "/cardPage.html";
     })
 }
+
+const buttonVer = document.querySelector('.card_button');
+if (buttonVer) {
+    buttonVer.addEventListener('click', () => {
+        const name = nameElement.value
+        const prof = profElement.value
+        console.log(prof);
+
+        const tel = phoneElement.value
+        const mail = emailElement.value
+        const linkedIn = linkedElement.value
+        const gitHub = githubElement.value
+        window.location.href = `/card.html?name=${name}&profes=${prof}&mail=${mail}&tel=${tel}&linkedIn=${linkedIn}&gitHub=${gitHub}`;
+    })
+}
+/*change the arrow*/
+
+
 /*input of name*/
 const nameElement = document.querySelector('#name');
 const nameCardElement = document.querySelector('.name_card');
@@ -75,6 +94,7 @@ const fontElement = document.querySelector('.font');
 arrowElement.addEventListener('click', () => {
     colorElement.classList.toggle('collapse')
     fontElement.classList.toggle('collapse')
+    arrowElement.classList.toggle('closed')
     console.log(arrowElement);
 })
 
@@ -82,19 +102,21 @@ const arrow1Element = document.querySelector('.arrow_anim2');
 const formElement = document.querySelector('.form');
 arrow1Element.addEventListener('click', () => {
     formElement.classList.toggle('collapse')
+    arrow1Element.classList.toggle('closed')
     console.log(formElement);
 })
 const arrow2Element = document.querySelector('.arrow_anim3');
 const compartirElement = document.querySelector('.compart');
 arrow2Element.addEventListener('click', () => {
     compartirElement.classList.toggle('collapse')
+    arrow2Element.classList.toggle('closed')
     console.log(arrow2Element);
 })
 
 /*change the background of card*/
 import fondo1 from './fondo1.jpg'
 import fondo2 from './fondo2.jpg'
-import fondo3 from './Fondo3.jpg'
+import fondo3 from './fondo3.jpeg'
 
 const radio1Element = document.getElementById('colorpalete1');
 const radio2Element = document.getElementById('colorpalete2');
@@ -104,14 +126,17 @@ radio1Element.addEventListener('change', () => {
     console.log(fondo2);
 
     cardElement.style.backgroundImage = `url(${fondo1})`
+    cardElement.classList.remove('fontcolor');
 })
 
 radio2Element.addEventListener('change', () => {
     cardElement.style.backgroundImage = `url(${fondo2})`
+    cardElement.classList.add('fontcolor')
 })
 
 radio3Element.addEventListener('change', () => {
     cardElement.style.backgroundImage = `url(${fondo3})`
+    cardElement.classList.remove('fontcolor');
 })
 /*change fonts of card*/
 const font1Element = document.getElementById('fuente1');
@@ -133,3 +158,4 @@ font3Element.addEventListener('change', () => {
     cardFontElement.classList.remove('fontMonts');
     cardFontElement.classList.remove('fontUbuntu');
 })
+

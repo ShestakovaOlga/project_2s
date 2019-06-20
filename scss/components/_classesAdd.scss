@@ -1,0 +1,20 @@
+.fontUbuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+.fontMonts {
+    font-family: 'Montserrat', sans-serif;
+}
+.fontMali {
+    font-family:'Mali', cursive;
+}
+.fontcolor{
+    color:$color-light;
+}
+.fa-angle-down.closed {
+    transform: rotateZ(0deg);
+    transition: all 1s;
+}
+.fa-angle-down{
+    transition: all 1s;
+    transform: rotateZ(180deg);
+}
