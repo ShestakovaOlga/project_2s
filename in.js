@@ -68,7 +68,7 @@ buttonTwit.addEventListener('click', () => {
         })
     }).then(res => res.json())
         .then(r => {
-            shareTwitter(`https://` + window.location.host + `/proyect_2s/card.html?id=${r.id}`, 'Mi tarjeta de visita hecha por Olga')
+            shareTwitter(`https://` + window.location.host + `/project_2s/card.html?id=${r.id}`, 'Mi tarjeta de visita hecha por Olga')
         })
 })
 
