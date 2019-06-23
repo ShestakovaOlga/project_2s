@@ -217,5 +217,7 @@ font3Element.addEventListener('change', () => {
 })
 
 function shareTwitter(url, text) {
-    window.location.href = "https://twitter.com/share?url=" + escape(url) + "&text=" + text;
+    setTimeout(() => {
+        window.location.href = "https://twitter.com/share?url=" + escape(url) + "&text=" + text;
+    }, 1000)
 }
