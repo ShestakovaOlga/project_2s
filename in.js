@@ -36,7 +36,7 @@ if (buttonVer) {
             })
         }).then(res => res.json())
             .then(r => {
-                window.location.href = `/card.html?id=${r.id}`;
+                window.location.href = `card.html?id=${r.id}`;
             })
     })
 }
@@ -68,7 +68,7 @@ buttonTwit.addEventListener('click', () => {
         })
     }).then(res => res.json())
         .then(r => {
-            shareTwitter(`https://` + window.location.host + `/card.html?id=${r.id}`, 'Mi tarjeta de visita hecha por Olga')
+            shareTwitter(`https://` + window.location.host + `/proyect_2s/card.html?id=${r.id}`, 'Mi tarjeta de visita hecha por Olga')
         })
 })
 
