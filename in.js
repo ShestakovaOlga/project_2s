@@ -5,7 +5,7 @@ import './card.html';
 const buttonStart = document.querySelector('.start_button');//start button
 if (buttonStart) {
     buttonStart.addEventListener('click', () => {
-        window.location.href = "/cardPage.html";
+        window.location.href = "cardPage.html";
     })
 }
 /*Send a card */
