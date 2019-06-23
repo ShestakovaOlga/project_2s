@@ -30,10 +30,13 @@
   height: 250px;
   background-size: cover;
 }
+#twitter{
+  font-size: 40px;
+  cursor: pointer;
+}
 
 .img_card{
   grid-row: 2/7;
-  height: 80%;
   margin: 10%;
   width: 80%;
   border-radius: 5px;

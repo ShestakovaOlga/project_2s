@@ -8,7 +8,7 @@ if (buttonStart) {
         window.location.href = "/cardPage.html";
     })
 }
-
+/*Send a card */
 const buttonVer = document.querySelector('.card_button');
 if (buttonVer) {
     buttonVer.addEventListener('click', () => {
@@ -18,9 +18,60 @@ if (buttonVer) {
         const mail = emailElement.value
         const linkedIn = linkedElement.value
         const gitHub = githubElement.value
-        window.location.href = `/card.html?name=${name}&prof=${prof}&mail=${mail}&tel=${tel}&linkedIn=${linkedIn}&gitHub=${gitHub}&fondo=${fondoSelected}&font=${fontSelected}`;
+        fetch('https://card.galax.be/new', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name,
+                prof,
+                tel,
+                mail,
+                linkedIn,
+                gitHub,
+                imgAvatar,
+                fondoSelected,
+                fontSelected
+            })
+        }).then(res => res.json())
+            .then(r => {
+                window.location.href = `/card.html?id=${r.id}`;
+            })
     })
 }
+
+const buttonTwit = document.querySelector('#twitter');
+
+buttonTwit.addEventListener('click', () => {
+    const name = nameElement.value
+    const prof = profElement.value
+    const tel = phoneElement.value
+    const mail = emailElement.value
+    const linkedIn = linkedElement.value
+    const gitHub = githubElement.value
+    fetch('https://card.galax.be/new', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            name,
+            prof,
+            tel,
+            mail,
+            linkedIn,
+            gitHub,
+            imgAvatar,
+            fondoSelected,
+            fontSelected
+        })
+    }).then(res => res.json())
+        .then(r => {
+            shareTwitter(`https://` + window.location.host + `/card.html?id=${r.id}`, 'Mi tarjeta de visita hecha por Olga')
+        })
+})
+
 /*change the arrow*/
 
 
@@ -73,6 +124,7 @@ if (githubElement) {
     })
 }
 /*input of img*/
+let imgAvatar
 const imghubElement = document.querySelector('#img-selector');
 const imghubCardElement = document.querySelector('.img_card ');
 imghubElement.addEventListener('change', (event) => {
@@ -80,6 +132,7 @@ imghubElement.addEventListener('change', (event) => {
     fr.onload = function () {
         imghubCardElement.setAttribute('src', fr.result)
         imghubCardElement.src = fr.result;
+        imgAvatar = fr.result;
     }
     fr.readAsDataURL(imghubElement.files[0]);
     console.log(imghubElement.files[0]);
@@ -163,3 +216,6 @@ font3Element.addEventListener('change', () => {
     fontSelected = 3
 })
 
+function shareTwitter(url, text) {
+    window.location.href = "https://twitter.com/share?url=" + escape(url) + "&text=" + text;
+}
